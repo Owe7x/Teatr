@@ -1,0 +1,781 @@
+* 
+    box-sizing: border-box
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    color: #FFFFFF 
+    
+body
+    background: #333333
+
+.header
+    position: relative
+    background-image: url(../img/bg.png)
+    background-size: cover
+    height: 100vh
+    .fixedpanel
+        position: absolute
+        display: block
+        width: 150px
+        height: 100vh
+       
+        background: rgba(51, 51, 51, 0.75)
+    .fixedpanel__contact
+        display: flex
+        align-items: center
+        transform: rotate(90deg)
+        transform-origin: 0% 100%
+        position: absolute
+        top: 15%
+        left: 2%
+        .contact__contactinfo
+            text-transform: uppercase
+            padding-right: 10px
+            &__span 
+                font-size: 18px
+                line-height: 25px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                color: #C4C4C4
+        .line 
+            width: 30px 
+            height: 1px
+            background: white
+                
+        .contact__icon
+            padding-left: 30px
+            display: flex
+            align-items: center
+            i 
+                margin-right: 20px
+                font-size: 20px
+                transform: rotate(-90deg)
+                cursor: pointer
+                &:hover
+                    color: red
+    &__top-line
+        display: flex
+        padding-top: 51px
+        padding-bottom: 190px
+        justify-content: space-between
+        .top-line__menu
+            .burger 
+                display: none
+            nav 
+                display: flex
+                li
+                    list-style: none
+                    padding-right: 63px
+                    text-transform: uppercase
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 25px
+
+                    a
+                        text-decoration: none
+                        color: #ffffff
+
+        .top-line__contacts
+            
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            border-bottom: 2px solid #D1A954
+    &__main
+        .main__h1
+            font-weight: bold
+            font-size: 53px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            padding-top: 100px
+            padding-bottom: 50px
+        .main__p
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 150%
+            padding-bottom: 49px
+        .slide-img
+            display: flex
+            align-items: center
+            justify-content: center
+    .modals
+        position: absolute
+        top: 0
+        left: 0
+        background: red
+        height: 100vh 
+        z-index: 1
+        width: 300px
+        background: #333333
+        padding: 38px 38px 140px
+        .modal__close
+            border: none
+            background: none
+            float: right
+        nav 
+            padding-top: 76px
+            li
+                list-style: none
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 18px
+                line-height: 33px
+                letter-spacing: 0.05em
+                padding-bottom: 30px
+        a
+            i
+                font-size: 28px
+                padding-right: 27px
+
+.about
+    &__blocks
+        display: flex
+        .about__block
+            margin-left: 20px
+            margin-right: 20px
+            display: flex
+            flex-direction: column
+            &__h1
+                font-family: Open Sans Condensed
+                font-style: normal
+                font-weight: bold
+                font-size: 17px
+                line-height: 29px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                padding-bottom: 40px
+            &__p
+                max-width: 445px
+                font-family: Open Sans
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 150%
+            &__img
+                display: block
+                padding-bottom: 30px
+                &:last-child
+                    padding-bottom: 0px
+        .about__block__imgages
+            display: block
+
+.projects
+    .container-fluid
+        
+        .projects__img
+            position: relative
+        .projects__hover 
+            position: absolute
+            top: 45%
+            left: 40%
+            width: 100px
+            height: 100px
+            background: #D1A954
+            border-radius: 50px
+            z-index: 22
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+        .project__text__top
+            position: absolute
+            top: 5%
+            left: 5%
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 33px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+        .project__text__buttom
+            width: 200px
+            position: absolute
+            bottom: 20%
+            left: -12%
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            transform: rotate(-90deg)
+
+.rating
+    background-image: url(/img/rating.png)
+    background-size: cover
+    width: 100%
+    margin-top: 150px
+    &__block
+        
+        padding: 126px 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        &__year
+            nav
+                li
+                    list-style: none
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 72px
+                    line-height: 98px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #D1A954
+        &__text
+            padding-left: 103px
+            .ratings
+                padding-bottom: 25px
+                img
+                    padding-right: 25px
+            p
+                font-family: Open Sans
+                font-style: normal
+                font-weight: bold
+                font-size: 36px
+                line-height: 150%
+.button
+    width: 160px
+    height: 50px
+    background: #D1A954
+    border: none
+.partners
+  
+     
+        .partner__blocks__block
+            display: flex
+            justify-content: center
+            align-items: center
+.footer
+    &__block
+        display: flex
+        &__text
+            min-width: 330px
+            nav
+                li
+                    list-style: none
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 22px
+                    letter-spacing: 0.05em
+                    text-transform: uppercase
+                    margin-bottom: 25px
+        &__form
+            margin-left: 10px
+            &__block
+                display: flex
+                form
+                   
+                    input
+                        width: 180px
+                        height: 35px
+                        background: #444444
+                        border: 1px solid #616161
+                        box-sizing: border-box
+                        margin: 0px 0px 30px 30px
+                textarea
+                    width: 310px
+                    height: 100px
+                    background: #444444
+                    border: 1px solid #616161
+                    box-sizing: border-box
+            &__buttom
+                display: flex
+                justify-content: space-between
+                p
+                    padding-left: 30px
+                    width: 390px
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 150%
+                    color: #989898
+    &__footer
+        display: flex
+        justify-content: space-between
+        padding-bottom: 20px
+        &__p
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 150%
+            color: #989898
+
+.hide
+    display: none !important
+.text
+    padding-top: 150px
+    padding-bottom: 100px
+    font-style: normal
+    font-weight: 300
+    font-size: 40px
+    line-height: 65px
+    text-align: center
+    letter-spacing: 0.1em
+    text-transform: uppercase
+
+@media screen and ( max-width: 1445px  )
+    .header
+        .fixedpanel
+            width: 100px
+        .fixedpanel__contact
+            top: 14%
+            left: 2%
+            .contact__contactinfo
+                &__span 
+                    font-size: 14px      
+            .contact__icon
+                i 
+                    font-size: 16px
+                    margin-right: 20px
+              
+        .container
+            max-width: 800px     
+        &__top-line
+            
+            padding-top: 21px
+            padding-bottom: 100px
+            .top-line__menu
+                .burger
+                    display: none
+                nav 
+                    li
+                        padding-right: 53px
+                        font-size: 11px
+            .top-line__contacts
+                font-size: 11px
+        &__main
+            .main__h1
+                font-size: 33px
+            .main__p
+                font-size: 12px
+            .slide-img
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 270px
+                    height: 370px
+    
+@media screen and ( max-width: 1200px  )
+    .footer
+        &__block
+            display: flex
+            flex-direction: column
+            flex-flow: column wrap
+            &__text
+                order: 2
+                min-width: 330px
+                nav
+                    display: flex
+                    justify-content: space-between
+                    
+                    li
+                       
+                        font-size: 15px
+
+            &__form
+                order: 1
+                margin-left: 10px
+                &__block
+                    display: flex
+                    form
+                    
+                        input
+                            width: 180px
+                            height: 35px
+                            background: #444444
+                            border: 1px solid #616161
+                            box-sizing: border-box
+                            margin: 0px 30px 30px 0px
+                    textarea
+                        width: 310px
+                        height: 100px
+                        background: #444444
+                        border: 1px solid #616161
+                        box-sizing: border-box
+                &__buttom
+                    display: flex
+                    justify-content: space-between
+                    p
+                        padding-left: 0px
+                        width: 390px
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 150%
+                        color: #989898
+        &__footer
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+            &__p
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 150%
+                color: #989898
+@media screen and ( max-width: 991px  )
+    .header
+        .fixedpanel
+            width: 50px
+        .fixedpanel__contact
+            top: 14%
+            left: 1%
+            .contact__contactinfo
+                &__span 
+                    font-size: 12px      
+            .contact__icon
+                i 
+                    font-size: 16px
+                    margin-right: 20px
+              
+        .container
+            max-width: 650px     
+        &__top-line
+            display: block
+            text-align: center
+            padding-top: 21px
+            padding-bottom: 100px
+            .top-line__menu
+                .burger 
+                    display: none
+                nav 
+                    li
+                        padding-right: 22px
+                        font-size: 14px
+                        &:last-child
+                            padding-right: 0px
+            .top-line__contacts
+                font-size: 14px
+                width: 130px
+                margin: 0 auto
+        &__main
+            .main__h1
+                font-size: 53px
+            .main__p
+                font-size: 14px
+            .swiper-container
+                display: none
+                .slide-img
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 270px
+                        height: 370px
+    .about
+        .about__block__imgages
+            display: none
+    .rating
+        .container
+            max-width: 991px
+            padding: 0px
+    .footer
+        &__block
+            display: flex
+            flex-direction: column
+            flex-flow: column wrap
+            &__text
+                order: 2
+                min-width: 330px
+                nav
+                    display: flex
+                    text-align: center
+                    li
+                        font-size: 12px
+
+            &__form
+                order: 1
+                
+                &__block
+                    display: flex
+                    form
+                    
+                        input
+                            width: 150px
+                            height: 35px
+                            margin: 0px 30px 30px 0px
+                    textarea
+                        width: 310px
+                        height: 100px
+                &__buttom
+                    display: flex
+                    justify-content: space-between
+                    p
+                        width: 390px
+
+        &__footer
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+            &__p
+                font-size: 12px
+
+    .button
+        width: 150px
+        height: 50px
+        background: #D1A954
+        border: none
+@media screen and ( max-width: 768px  )
+    .header
+        .fixedpanel
+            width: 50px
+            display: none
+        .fixedpanel__contact
+            display: none
+            top: 14%
+            left: 1%
+            .contact__contactinfo
+                &__span 
+                    font-size: 12px      
+            .contact__icon
+                i 
+                    font-size: 16px
+                    margin-right: 20px
+              
+        .container
+            max-width: 650px   
+          
+        &__top-line
+            display: flex
+            
+            padding-top: 21px
+            padding-bottom: 100px
+            .top-line__menu
+                .burger 
+                    display: block
+                nav 
+                    display: none
+            .top-line__contacts
+                font-size: 14px
+                margin: 0
+          
+        &__main
+            .main__h1
+                font-size: 53px
+            .main__p
+                font-size: 14px
+            .swiper-container
+                display: none
+                .slide-img
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 270px
+                        height: 370px
+    .about
+        .container
+            max-width: 800px
+    .rating
+        margin-top: 150px
+        &__block
+            padding: 126px 99px
+            &__year
+                nav
+                    li
+                        font-size: 72px
+            &__text
+                padding-left: 103px
+                .ratings
+                    padding-bottom: 25px
+                    img
+                        padding-right: 10px
+                p
+                    font-size: 29px
+    .footer
+        &__block
+            display: flex
+            flex-direction: column
+            flex-flow: column wrap
+            &__text
+                order: 2
+                min-width: 330px
+                nav
+                    display: flex
+                    text-align: center
+                    li
+
+                        font-size: 12px
+
+            &__form
+                order: 1
+                
+                &__block
+                    display: flex
+                    form
+                    
+                        input
+                            width: 120px
+                            height: 35px
+                            margin: 0px 20px 20px 0px
+                    textarea
+                        width: 210px
+                        height: 90px
+                &__buttom
+                    display: flex
+                    flex-direction: column
+                    
+                    p
+                        order: 2
+                        width: 390px
+                    .footer__button
+                        margin: 0 auto 10px
+                        order: 1
+        &__footer
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+            &__p
+                font-size: 12px
+                    
+    .button
+        width: 130px
+        height: 50px
+        background: #D1A954
+        border: none
+@media screen and ( max-width: 576px  )
+    .header
+        .fixedpanel
+            width: 50px
+            display: none
+        .fixedpanel__contact
+            display: none
+            top: 14%
+            left: 1%
+            .contact__contactinfo
+                &__span 
+                    font-size: 12px      
+            .contact__icon
+                i 
+                    font-size: 16px
+                    margin-right: 20px
+              
+        .container
+            max-width: 650px     
+        &__top-line
+            display: flex
+            
+            padding-top: 21px
+            padding-bottom: 60px
+            .top-line__menu
+                
+                nav 
+                    display: none
+                
+            .top-line__contacts
+                font-size: 14px
+                margin: 0
+                
+        &__main
+            .main__h1
+                font-size: 43px
+                padding-bottom: 20px
+            .main__p
+                font-size: 12px
+                padding-bottom: 20px
+            .swiper-container
+                display: none
+                .slide-img
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 270px
+                        height: 370px
+    .about 
+        .about__blocks
+            display: block
+            .about__block
+                margin-left: 20px
+                margin-right: 20px
+                margin-bottom: 20px
+                text-align: center
+                &__p
+                    margin: 0 auto
+    .projects
+        .projects__block
+            .projects__img
+                width: 240px
+                height: 350px
+            .projects__hover 
+                left: 30%
+            .project__text__buttom
+                width: 110px
+                font-size: 12px
+    .rating
+        
+        margin-top: 150px
+        &__block
+            display: block
+            text-align: center
+            padding: 126px 0px
+            &__year
+                nav
+                    li
+                        
+            &__text
+                padding-left: 0px
+                .ratings
+                    padding-bottom: 25px
+                    img
+                        padding-right: 10px
+                        
+                p
+    .footer
+        &__block
+            display: flex
+            flex-direction: column
+            flex-flow: column wrap
+            &__text
+                order: 2
+                min-width: 330px
+                nav
+                    display: flex
+                    flex-direction: column
+                    li
+                        padding-right: 10px
+                        font-size: 12px
+
+            &__form
+                order: 1
+                
+                &__block
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    form
+                        max-width: 375px
+                        input
+                            width: 125px
+                            height: 35px
+                            margin: 0px 15px 20px 15px
+                    textarea
+                        width: 290px
+                        height: 90px
+                &__buttom
+                    display: flex
+                    flex-direction: column
+                    
+                    p
+                        order: 2
+                        width: 290px
+                        font-size: 8px
+                    .footer__button
+                        margin: 10px auto 10px
+                        order: 1
+        &__footer
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+            &__p
+                font-size: 10px
+    .button
+        width: 150px
+        height: 50px
+        background: #D1A954
+        border: none
